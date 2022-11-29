@@ -29,6 +29,7 @@ public class EjemploHerenciaConstructores {
         profesor.setEdad(35);
         profesor.setEmail("profesor@correo.com");
 
+
         imprimir(alumno);
         imprimir(alumnoInternacional);
         imprimir(profesor);
@@ -41,6 +42,7 @@ public class EjemploHerenciaConstructores {
                 + ", Apellido:  " + persona.getApellido()
                 + ", Edad: " + persona.getEdad()
                 + ", Email: " + persona.getEmail());
+
 
         if (persona instanceof Alumno) {
             System.out.println("Imprimir los datos del tipo Alumno");
@@ -64,6 +66,8 @@ public class EjemploHerenciaConstructores {
             System.out.println("Asignatura: " + ((Profesor) persona).getAsignatura());
 
         }
+        System.out.println("===========================Sobre estritura de metodos===================================");
+        System.out.println(persona.saludar());
         System.out.println("==============================================================");
 
 
