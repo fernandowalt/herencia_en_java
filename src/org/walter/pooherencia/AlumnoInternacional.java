@@ -41,4 +41,17 @@ public class AlumnoInternacional extends Alumno {
     public String saludar() {
         return "Hola, que tal soy un alumno internacional y mi nomnres es: " + getNombre();
     }
+
+    @Override
+    public double calcularPromedio() {
+
+        return (super.calcularPromedio() * 3 + notaIdiomas) / 4;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\npais= " + pais + '\n' +
+                ", notaIdiomas= " + notaIdiomas;
+    }
 }
